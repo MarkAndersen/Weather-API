@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather API</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header class="page-header text-center">
+      <h1>Weather Dashboard</h1>
+    </header>
+    <main class="container-fluid row">
+      <!--sidebar-->
+      <section class="col-md-3">
+        <!--input-->
+        <div class="input-group mb-3">
+          <input
+            type="text"
+            class="form-control zip"
+            placeholder="Zip Code"
+            aria-label="Zip Code"
+            aria-describedby="button-addon2"
+          />
+          <div class="input-group-append">
+            <button
+              class="zip-btn btn btn-outline-secondary"
+              type="button"
+              id="button-addon2 submit-btn"
+            >
+              Search
+            </button>
+          </div>
+        </div>
+        <!--pre-selects-->
+        <div class="btn-group-vertical btn-block">
+          <button type="button" class="btn btn-outline-primary ny">New York, Ny</button>
+          <button type="button" class="btn btn-outline-primary la">Los Angeles, Ca</button>
+          <button type="button" class="btn btn-outline-primary ch">Chicago, Il</button>
+          <button type="button" class="btn btn-outline-primary ho">Houston, Tx</button>
+          <button type="button" class="btn btn-outline-primary px">Phoenix, Az</button>
+          <button type="button" class="btn btn-outline-primary ph">Philadelphia, Pa</button>
+          <button type="button" class="btn btn-outline-primary sa">San Antonio, Tx</button>
+          <button type="button" class="btn btn-outline-primary sd">San Diego, Ca</button>
+        </div>
+      </section>
+      <!--Current Conditions-->
+      <section class="conditions jumbotron col-md-9">
+        <h1 id='city-date'></h1>
+        <h2 id='jumbo-temp'></h2>
+        <h2 id='jumbo-rh'></h2>
+        <h2 id='jumbo-wind'></h2>
+        <h2 id='jumbo-sun'></h2>
+      </section>
+    </main>
+    <!--Five Day Forecast-->
+    <div class="container col-md-9 justify-right">
+      <div class="card-deck">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title date">Date Placeholder</h5>
+            <p class="card-text icon">icon</p>
+            <p class="card-text temp">temperature</p>
+            <p class="card-text rh">Humidity</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title date">Date Placeholder</h5>
+            <p class="card-text icon">icon</p>
+            <p class="card-text temp">temperature</p>
+            <p class="card-text rh">Humidity</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title date">Date Placeholder</h5>
+            <p class="card-text icon">icon</p>
+            <p class="card-text temp">temperature</p>
+            <p class="card-text rh">Humidity</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title date">Date Placeholder</h5>
+            <p class="card-text icon">icon</p>
+            <p class="card-text temp">temperature</p>
+            <p class="card-text rh">Humidity</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title date">Date Placeholder</h5>
+            <p class="card-text icon">icon</p>
+            <p class="card-text temp">temperature</p>
+            <p class="card-text rh">Humidity</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js'></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
