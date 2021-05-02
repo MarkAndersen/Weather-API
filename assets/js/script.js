@@ -144,5 +144,3 @@ $('.ph').on('click', philadelphia);
 $('.sa').on('click', sanAntonio);
 $('.sd').on('click', sanDiego);
 
-//TODO:
-//Local Storage
