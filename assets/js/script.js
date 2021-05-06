@@ -112,7 +112,7 @@ function sanDiego() {
 function zipCode() {
   var myZip = $('.zip').val();
   fetch(
-    'http://api.openweathermap.org/geo/1.0/zip?zip=' +
+    'https://api.openweathermap.org/geo/1.0/zip?zip=' +
       myZip +
       ',US&appid=' +
       myKey
